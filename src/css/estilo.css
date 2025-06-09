@@ -1,0 +1,188 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* estilização do cabeçalho */
+.cabecalho{
+    background-color: #0E0027;
+    display: flex;
+    justify-content: center;
+     /* espaçamento nas bordas da logo no cabeçalho*/
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+/* estilização do main do html */
+.container{
+    max-width: 1170px;
+    /* margem de 0 em cima e em baixo e margem de auto na esqueda e na direita */
+    margin: 0 auto;
+}
+
+/* estilização div dos produtos */
+.container .produtos{
+    color: #6528D3;
+    /* tamanho da fonte, peso e margem em baixo, altura da linha e espaçamento das letras */
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+/* estilização div dos filtros */
+.container .filtros{
+    display: flex;
+    justify-content: space-between;
+    /* espaçamento entre */
+    flex-wrap: wrap;
+    /* se não couber na mesma linha, pode quebrar na linha de baixo */
+    margin-bottom: 32px;
+}
+
+/* estilização div categorias cartas e preço cartas */
+.container .categoria-cartas, .container .preco-cartas{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+/* estilizando div categoria cartas */
+.container label{
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #6528d3;
+}
+/* estilização select seletores categoria, preço maximo */
+ .container .categoria-cartas select, .container .preco-cartas input{
+    padding: 16px 13px;
+    border-radius: 2px;
+    border: 2px solid #6528d3; 
+    background-color: #f2eefa;
+    color: #130234;
+    height: 52px;
+ }
+
+ /* estilizar o focus e o focus-visible do select e input, outline(borda) nenhuma */
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible{
+    outline: none;
+}
+
+.container select .categoria{
+    appearance: none;
+    background: url(../imagem/seta-para-baixo.png) 97% center no-repeat;
+}
+ /* botao o botão de aplicar filtros */
+.container .filtros .btn-filtrar{
+    border: none;
+    background-color: #6528d3;
+    color: #ededed;
+    padding: 16px 32px;
+    font-size: 500;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+/* estilizando o botão de aplicar filtros da pagina, hover: efeito de quando passa o mousse em cima*/
+.container .filtros .btn-filtrar:hover{
+    background-color: #33008f;
+}
+
+/* estilizando a ul cartas pai e as li filhos*/
+.container .cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* estilizando a li carta */
+.container .cartas .carta{
+    max-width: 365px;
+    background-color: #ededed;
+    color: #0e0027;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgb(0,0,0,0.2);
+}
+
+/* estilizar as imagens */
+.container .carta img{
+    width: 100%;
+    padding: 20px;
+}
+
+/* estilizando a div informacoes das cartas*/
+.container .carta .informacoes{
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* estilizando os nomes dos personagens da carta */
+.container .carta .informacoes .nome-personagem{
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+}
+/* estilizando a categoria */
+.container .carta .informacoes .categoria{
+    color: #7e7e7e;
+    font-weight: 700;
+}
+
+/* estilizando o preço */
+.container .carta .informacoes .preco{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-size: 700;
+    color: #4d8e5c;
+}
+
+/*estilizando o botão comprar*/
+
+.container .carta .informacoes .btn-comprar{
+    color: #ededed;
+    background-color: #6528d3;
+    padding: 16px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* hover: efeito de quando passa o mousse em cima*/
+.container .carta .informacoes .btn-comprar:hover{
+    background-color: #33008f;
+}
+
+ /* estilizando rodapé */
+ .rodape{
+    display:flex;
+    justify-content: center;
+    background-color: #6528d3;
+    color: #ededed;
+    padding: 20px;
+    margin-top: 60px;
+ }
+
+ /* filtragem das cartas de acordo com a categoria selecionada, ex: rara, tem que aparecer só as categorias rara, não as outras */
+
+ .esconder{
+    display: none;
+ }
+
+ .mostrar{
+    display: block;
+ }
