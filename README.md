@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-E-commerce de cartinhas inspiradas no jogo Magic, com ferramentas como filtos de categoria e preço.
+E-commerce de cartinhas inspiradas no jogo Magic, com ferramentas como filtros de categoria e preço.
 
 <a href="https://kethillen.github.io/magickIA/" target="_blank">Veja o projeto aqui</a>
 
